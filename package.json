@@ -8,16 +8,21 @@
     "@capacitor/core": "1.0.0-beta.24",
     "@capacitor/ios": "^1.0.0-beta.24",
     "@ionic/react": "^0.0.5",
+    "axios": "^0.18.0",
+    "babel-loader": "^8.0.5",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router": "^5.0.0",
     "react-router-dom": "^5.0.0",
-    "react-scripts": "3.0.1"
+    "react-scripts": "3.0.1",
+    "stream-chat": "^0.13.2",
+    "stream-chat-react": "^0.5.8"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "ionic:build": "react-scripts build"
+    "ionic:build": "react-scripts build",
+    "ionic:serve": "react-scripts start"
   },
   "eslintConfig": {
     "extends": "react-app"

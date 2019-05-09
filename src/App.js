@@ -1,30 +1,19 @@
-import React, { Component } from "react";
-import "@ionic/core/css/core.css";
-import "@ionic/core/css/ionic.bundle.css";
-import {
-  IonApp,
-  IonContent,
-  IonCard,
-  IonCardHeader,
-  IonCardTitle,
-  IonCardSubtitle
-} from "@ionic/react";
+import React from "react";
+import { BrowserRouter as Router, Switch } from "react-router-dom";
 
-class App extends Component {
-  render() {
-    return (
-      <IonApp>
-        <IonContent>
-          <IonCard>
-            <IonCardHeader>
-              <IonCardSubtitle>Welcome to Ionic</IonCardSubtitle>
-              <IonCardTitle>Running on React</IonCardTitle>
-            </IonCardHeader>
-          </IonCard>
-        </IonContent>
-      </IonApp>
-    );
-  }
-}
+import Chat from "./Chat";
+import Login from "./Login";
+
+import UnauthedRoute from "./UnauthedRoute";
+import AuthedRoute from "./AuthedRoute";
+
+const App = () => (
+  <Router>
+    <Switch>
+      <UnauthedRoute path="/auth/login" component={Login} />
+      <AuthedRoute path="/" component={Chat} />
+    </Switch>
+  </Router>
+);
 
 export default App;

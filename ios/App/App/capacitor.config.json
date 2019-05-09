@@ -3,5 +3,8 @@
   "appName": "Ionic Chat",
   "bundledWebRuntime": false,
   "npmClient": "npm",
-  "webDir": "build"
+  "webDir": "build",
+  "server": {
+    "url": "http://localhost:3000"
+  }
 }

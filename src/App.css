@@ -1,33 +1,104 @@
-.App {
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+html,
+body {
+  background: #ffffff;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right)
+    env(safe-area-inset-bottom) env(safe-area-inset-left);
+  font-family: "Open Sans", sans-serif;
+}
+
+::placeholder {
+  color: #3f3844;
+}
+
+.login-root {
   text-align: center;
+  margin-top: 25%;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.login-card > h4 {
+  margin-bottom: 22px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.login-card > input {
+  padding: 4px 6px;
+  margin-bottom: 20px;
+  border: 1px solid #d3d3d3;
+  background: hsla(0, 0%, 100%, 0.2);
+  border-radius: 4px !important;
+  font-size: 16px;
+  color: #24282e;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: 0;
+  padding: 0 16px 1px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  height: 50px;
+  width: 300px;
 }
 
-.App-link {
-  color: #61dafb;
+.login-card button {
+  font-size: 16px;
+  background-color: #3880ff;
+  border-radius: 4px;
+  line-height: 1.4em;
+  padding: 14px 33px 14px;
+  margin-right: 10px;
+  border: 0 solid rgba(0, 0, 0, 0);
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.12);
+  border-radius: 6px;
+  text-transform: none;
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.str-chat__loading-indicator {
+  text-align: center;
+  margin-top: 15%;
+}
+
+.str-chat-channel {
+  background-color: #ffffff !important;
+}
+
+.str-chat__header-livestream {
+  box-shadow: none !important;
+  background: transparent;
+}
+
+.str-chat__square-button {
+  display: none !important;
+}
+
+.str-chat__input {
+  box-shadow: none !important;
+}
+
+.rta__textarea {
+  padding: 4px 6px;
+  margin-bottom: 20px;
+  border: 1px solid #d3d3d3 !important;
+  background: hsla(0, 0%, 100%, 0.2);
+  border-radius: 4px !important;
+  font-size: 16px !important;
+  color: #24282e !important;
+  -webkit-box-shadow: none !important;
+  -webkit-appearance: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  padding: 0 16px 1px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  height: 50px;
+}
+
+.str-chat__input-footer--count {
+  margin-top: 4px;
+  margin-left: 4px;
+}
+
+.footer {
+  margin-bottom: 50px;
 }
