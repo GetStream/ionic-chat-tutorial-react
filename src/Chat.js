@@ -1,5 +1,15 @@
 import React, { Component } from "react";
-import { IonApp } from "@ionic/react";
+import {
+  IonMenu,
+  IonHeader,
+  IonCard,
+  IonCardHeader,
+  IonToolbar,
+  IonTitle,
+  IonCardTitle,
+  IonContent,
+  IonRouterOutlet
+} from "@ionic/react";
 import {
   Chat,
   Channel,
@@ -20,13 +30,16 @@ import "stream-chat-react/dist/css/index.css";
 class App extends Component {
   constructor(props) {
     super(props);
-    this.client = new StreamChat(process.env.REACT_APP_STREAM_API_KEY);
 
+    const { id, name, email, image } = JSON.parse(localStorage.getItem("user"));
+
+    this.client = new StreamChat(process.env.REACT_APP_STREAM_API_KEY);
     this.client.setUser(
       {
-        id: "nick-parsons",
-        name: "Nick Parsons",
-        image: "https://i.imgur.com/gwaMDJZ.png"
+        id,
+        name,
+        email,
+        image
       },
       localStorage.getItem("token")
     );
@@ -39,20 +52,36 @@ class App extends Component {
 
   render() {
     return (
-      <IonApp>
-        <Chat client={this.client} theme={"messaging light"}>
-          <Channel channel={this.channel}>
-            <Window>
-              <ChannelHeader />
-              <MessageList />
-              <div className="footer">
-                <MessageInput />
-              </div>
-            </Window>
-            <Thread />
-          </Channel>
-        </Chat>
-      </IonApp>
+      <>
+        <IonMenu class="menu-main" side="start" content-id="content">
+          <IonHeader>
+            <IonToolbar color="primary">
+              <IonTitle>Select Channel</IonTitle>
+            </IonToolbar>
+          </IonHeader>
+          <IonContent padding>Hello World!</IonContent>
+        </IonMenu>
+        <IonRouterOutlet />
+
+        <IonContent id="content">
+          <IonCard>
+            <IonContent id="chat">
+              <Chat client={this.client} theme={"messaging light"}>
+                <Channel channel={this.channel}>
+                  <Window>
+                    <ChannelHeader />
+                    <MessageList />
+                    <div className="footer">
+                      <MessageInput />
+                    </div>
+                  </Window>
+                  <Thread />
+                </Channel>
+              </Chat>
+            </IonContent>
+          </IonCard>
+        </IonContent>
+      </>
     );
   }
 }

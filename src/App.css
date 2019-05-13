@@ -8,6 +8,10 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+.slide-menu {
+  background: lime !important;
+}
+
 ::placeholder {
   color: #3f3844;
 }
@@ -82,7 +86,7 @@ body {
   border: 1px solid #d3d3d3 !important;
   background: hsla(0, 0%, 100%, 0.2);
   border-radius: 4px !important;
-  font-size: 16px !important;
+  font-size: 14px !important;
   color: #24282e !important;
   -webkit-box-shadow: none !important;
   -webkit-appearance: none !important;
@@ -92,6 +96,10 @@ body {
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   height: 50px;
+}
+
+.str-chat__textarea {
+  height: 45px !important;
 }
 
 .str-chat__input-footer--count {

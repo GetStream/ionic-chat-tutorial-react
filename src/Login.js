@@ -21,12 +21,12 @@ class Login extends Component {
       loading: true
     });
 
-    const auth = await axios(process.env.REACT_APP_TOKEN_ENDPOINT, {
+    const auth = await axios.post(process.env.REACT_APP_TOKEN_ENDPOINT, {
       name: this.state.name,
       email: this.state.email
     });
 
-    localStorage.setItem("user", auth.data.user);
+    localStorage.setItem("user", JSON.stringify(auth.data.user));
     localStorage.setItem("token", auth.data.token);
 
     await this.setState({
