@@ -8,8 +8,8 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-.slide-menu {
-  background: lime !important;
+.no-scroll .scroll-content {
+  overflow: hidden;
 }
 
 ::placeholder {

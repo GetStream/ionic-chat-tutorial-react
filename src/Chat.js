@@ -1,15 +1,5 @@
 import React, { Component } from "react";
-import {
-  IonMenu,
-  IonHeader,
-  IonCard,
-  IonCardHeader,
-  IonToolbar,
-  IonTitle,
-  IonCardTitle,
-  IonContent,
-  IonRouterOutlet
-} from "@ionic/react";
+import { IonApp, IonContent } from "@ionic/react";
 import {
   Chat,
   Channel,
@@ -52,36 +42,22 @@ class App extends Component {
 
   render() {
     return (
-      <>
-        <IonMenu class="menu-main" side="start" content-id="content">
-          <IonHeader>
-            <IonToolbar color="primary">
-              <IonTitle>Select Channel</IonTitle>
-            </IonToolbar>
-          </IonHeader>
-          <IonContent padding>Hello World!</IonContent>
-        </IonMenu>
-        <IonRouterOutlet />
-
-        <IonContent id="content">
-          <IonCard>
-            <IonContent id="chat">
-              <Chat client={this.client} theme={"messaging light"}>
-                <Channel channel={this.channel}>
-                  <Window>
-                    <ChannelHeader />
-                    <MessageList />
-                    <div className="footer">
-                      <MessageInput />
-                    </div>
-                  </Window>
-                  <Thread />
-                </Channel>
-              </Chat>
-            </IonContent>
-          </IonCard>
+      <IonApp>
+        <IonContent>
+          <Chat client={this.client} theme={"messaging light"}>
+            <Channel channel={this.channel}>
+              <Window>
+                <ChannelHeader />
+                <MessageList />
+                <div className="footer">
+                  <MessageInput />
+                </div>
+              </Window>
+              <Thread />
+            </Channel>
+          </Chat>
         </IonContent>
-      </>
+      </IonApp>
     );
   }
 }
