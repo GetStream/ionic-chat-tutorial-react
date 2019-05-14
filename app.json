@@ -1,9 +1,16 @@
 {
   "name": "Stream Chat",
   "description": "Stream Chat API",
+  "logo": "https://avatars3.githubusercontent.com/u/8597527",
   "website": "https://getstream.io/chat/",
   "repository": "https://heroku.com/deploy?template=https://github.com/GetStream/ionic-chat-tutorial-react/tree/master/server",
   "success_url": "https://getstream.io/chat/",
   "keywords": ["stream", "chat", "api", "express"],
-  "addons": ["stream:chat-trial"]
+  "addons": ["stream:chat-trial"],
+  "env": {
+    "NODE_ENV": {
+      "description": "Sets the node environment to production.",
+      "value": "production"
+    }
+  }
 }
