@@ -34,7 +34,7 @@ class App extends Component {
       localStorage.getItem("token")
     );
 
-    this.channel = this.client.channel("messaging", "ionic", {
+    this.channel = this.client.channel("messaging", "ionic-nd73j", {
       image: "https://i.imgur.com/gwaMDJZ.png",
       name: "Ionic Chat"
     });
