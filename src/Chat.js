@@ -23,7 +23,7 @@ class App extends Component {
 
     const { id, name, email, image } = JSON.parse(localStorage.getItem("user"));
 
-    this.client = new StreamChat(process.env.REACT_APP_STREAM_API_KEY);
+    this.client = new StreamChat(localStorage.getItem("apiKey"));
     this.client.setUser(
       {
         id,
@@ -34,7 +34,7 @@ class App extends Component {
       localStorage.getItem("token")
     );
 
-    this.channel = this.client.channel("messaging", "ionic-nd73j", {
+    this.channel = this.client.channel("messaging", "ionic-chat", {
       image: "https://i.imgur.com/gwaMDJZ.png",
       name: "Ionic Chat"
     });

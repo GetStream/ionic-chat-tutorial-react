@@ -28,6 +28,7 @@ class Login extends Component {
 
     localStorage.setItem("user", JSON.stringify(auth.data.user));
     localStorage.setItem("token", auth.data.token);
+    localStorage.setItem("apiKey", auth.data.apiKey);
 
     await this.setState({
       loading: false
