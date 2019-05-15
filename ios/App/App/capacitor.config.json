@@ -1,10 +1,7 @@
 {
-  "appId": "io.ionic.starter",
+  "appId": "io.getstream.ionic",
   "appName": "Ionic Chat",
   "bundledWebRuntime": false,
   "npmClient": "npm",
-  "webDir": "build",
-  "server": {
-    "url": "http://localhost:3000"
-  }
+  "webDir": "build"
 }

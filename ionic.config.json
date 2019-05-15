@@ -2,6 +2,7 @@
   "name": "Ionic Chat",
   "type": "custom",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   }
 }

@@ -25,3 +25,9 @@ yarn-error.log*
 .env
 dist
 node_modules
+
+# mobile
+android/
+ios/
+platforms/
+plugins/
