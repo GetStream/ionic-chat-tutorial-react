@@ -3,22 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@capacitor/android": "^1.0.0-beta.24",
-    "@capacitor/cli": "1.0.0-beta.24",
-    "@capacitor/core": "1.0.0-beta.24",
-    "@capacitor/ios": "^1.0.0-beta.24",
-    "@ionic/react": "^0.0.5",
-    "axios": "^0.18.0",
-    "babel-loader": "^8.0.5",
-    "cordova-android": "8.0.0",
-    "eslint-plugin-import": "^2.17.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-router": "^5.0.0",
-    "react-router-dom": "^5.0.0",
-    "react-scripts": "3.0.1",
-    "stream-chat": "^0.13.2",
-    "stream-chat-react": "^0.5.8"
+    "@capacitor/android": "^1.5.0",
+    "@capacitor/cli": "1.5.0",
+    "@capacitor/core": "1.5.0",
+    "@capacitor/ios": "^1.5.0",
+    "@ionic/react": "^5.0.0",
+    "axios": "^0.19.2",
+    "babel-loader": "^8.0.6",
+    "cordova-android": "8.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.3.1",
+    "stream-chat": "^1.3.2",
+    "stream-chat-react": "^0.8.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -42,13 +42,13 @@
     ]
   },
   "devDependencies": {
-    "@ionic/app-scripts": "^3.2.3",
-    "cordova-plugin-device": "2.0.2",
-    "cordova-plugin-ionic-keyboard": "^2.0.5",
-    "cordova-plugin-ionic-webview": "^4.0.0",
-    "cordova-plugin-splashscreen": "5.0.2",
-    "cordova-plugin-statusbar": "2.4.2",
-    "cordova-plugin-whitelist": "1.3.3"
+    "@ionic/app-scripts": "^3.2.4",
+    "cordova-plugin-device": "2.0.3",
+    "cordova-plugin-ionic-keyboard": "^2.2.0",
+    "cordova-plugin-ionic-webview": "^4.1.3",
+    "cordova-plugin-splashscreen": "5.0.3",
+    "cordova-plugin-statusbar": "2.4.3",
+    "cordova-plugin-whitelist": "1.3.4"
   },
   "cordova": {
     "plugins": {
