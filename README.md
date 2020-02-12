@@ -1,6 +1,6 @@
 # Build a Real-Time Chat App with Ionic, React, and Stream
 
-This is the base repo for the tutorial on Medium titled [How to Build an Ionic Chat App with React and Stream](https://levelup.gitconnected.com/how-to-build-an-ionic-chat-app-with-react-and-stream-739b67611280).
+This is the base repo for the tutorial on [The Stream Blog](https://getstream.io/blog) titled [How to Build an Ionic Chat App with React and Stream](https://getstream.io/blog/realtime-chat-with-ionic/).
 
 The tutorial walks you through how to build a mobile application with Ionic, React and Chat powered by [Stream](https://getstream.io/chat).
 
