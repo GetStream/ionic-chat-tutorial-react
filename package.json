@@ -8,7 +8,7 @@
     "@capacitor/core": "1.5.0",
     "@capacitor/ios": "^1.5.0",
     "@ionic/react": "^5.0.0",
-    "axios": "^0.19.2",
+    "axios": "^0.31.1",
     "babel-loader": "^8.0.6",
     "cordova-android": "8.1.0",
     "eslint-plugin-import": "^2.20.1",
