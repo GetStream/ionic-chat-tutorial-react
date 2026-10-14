@@ -4,11 +4,11 @@
   "private": true,
   "dependencies": {
     "@capacitor/android": "^1.5.0",
-    "@capacitor/cli": "1.5.0",
+    "@capacitor/cli": "8.4.2",
     "@capacitor/core": "1.5.0",
     "@capacitor/ios": "^1.5.0",
     "@ionic/react": "^5.0.0",
-    "axios": "^0.19.2",
+    "axios": "^0.32.0",
     "babel-loader": "^8.0.6",
     "cordova-android": "8.1.0",
     "eslint-plugin-import": "^2.20.1",
@@ -16,9 +16,9 @@
     "react-dom": "^16.12.0",
     "react-router": "^5.1.2",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.3.1",
-    "stream-chat": "^1.3.2",
-    "stream-chat-react": "^0.8.4"
+    "react-scripts": "5.0.1",
+    "stream-chat": "^9.50.2",
+    "stream-chat-react": "^14.9.0"
   },
   "scripts": {
     "start": "react-scripts start",
